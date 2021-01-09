@@ -2,24 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
     <title>Create a simple webpage using HTML & CSS</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   </head>
   <body>
     <!-- section 1 Nav-menu, header -->
-    <section class="sec-1">
+    <section class="sec-1" id="home">
+      <div class="hamburger" id="hamburger">
+        <span class="m-line"></span>
+        <span class="m-line"></span>
+        <span class="m-line"></span>
+      </div>
       <nav class="navbar">
+        
         <span class="logo">Studio</span>
         <ul class="nav">
-          <a href="#" class="active">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Our Work</a>
+          <a href="#home" class="active">Home</a>
+          <a href="#about_us">About Us</a>
+          <a href="#our_work">Our Work</a>
           <a href="#">Expertise</a>
-          <a href="#">Price</a>
-          <a href="#">Contact</a>
+          <a href="#price">Price</a>
+          <a href="#contact">Contact</a>
         </ul>
       </nav>
       <header>
@@ -32,7 +39,7 @@
       </header>
     </section>
     <!-- section 2 -->
-    <section class="sec-2">
+    <section class="sec-2" id="">
       <div class="features">
         <div class="fea">
           <img src="/icons/trophy.svg" alt="" class="src" />
@@ -71,12 +78,12 @@
           </div>
         </div>
       </div>
-      <div class="about-us">
+      <div class="about-us" id="about_us">
         <div class="img">
           <img src="https://images.unsplash.com/photo-1577760258779-e787a1733016?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="" />
         </div>
 
-        <div class="content">
+        <div class="content" >
           <div>
             <div class="line short"></div>
             <h2>about us</h2>
@@ -97,10 +104,11 @@
           <div class="skill">
             <h3>Our Skills</h3>
             <div class="lines">
-              <div class="line bar1"></div>
-              <div class="line bar2"></div>
-              <div class="line bar3"></div>
-              <div class="line bar4"></div>
+              <div class="value v1"><div class="line bar1"></div></div>
+              <div class="value v2"><div class="line bar2"></div></div>
+              <div class="value v3"><div class="line bar3"></div></div>
+              <div class="value v4"><div class="line bar4"></div></div>
+              
             </div>
           </div>
         </div>
@@ -109,7 +117,7 @@
     <!-- section-2 end -->
 
     <!-- section-3 start -->
-    <section class="sec-3">
+    <section class="sec-3" id="our_work">
       <div class="header">
         <h2>portfolio</h2>
         <div class="line port short"></div>
@@ -161,7 +169,7 @@
     </section>
  <!-- section-4 end -->
   <!-- section-5 start -->
-    <section class="sec-5">
+    <section class="sec-5" id="price">
         <h2>Pricing</h2>
         <div class="cards">
             <div class="price">
@@ -213,7 +221,7 @@
     </section>
       <!-- section-5 End -->
       <!-- section-6 start -->
-      <section class="sec-6 ">
+      <section class="sec-6 " id="contact">
           <h2>Subscribe to our news letter to get the latest news</h2>
                 <form  class="sub">
                     <input type="text" placeholder="Name" class="name">
@@ -229,20 +237,18 @@
       </section>
       <!-- section-6 end -->
       <section class="footer">
-        <ul class="nav">
+       
             <a href="#">Home</a>
             <a href="#">About Us</a>
             <a href="#">Our Work</a>
             <a href="#">Expertise</a>
             <a href="#">Price</a>
             <a href="#">Contact</a>
-          </ul>
+  
       </section>
-      <script>
-        // window.onresize= function show(){
-        //   console.log(document.body.);
-        // };
-        
-      </script>
+
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src="app.js"></script>
   </body>
 </html>
